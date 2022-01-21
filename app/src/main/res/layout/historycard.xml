@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+android:paddingHorizontal="@dimen/_5sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:id="@+id/ordercard"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="#F6F7F9">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order no: "
+                android:textColor="@color/green"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="@dimen/_14ssp"/>
+            <TextView
+                android:id="@+id/orno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="102"
+                app:layout_constraintTop_toTopOf="@id/q"
+                app:layout_constraintStart_toEndOf="@id/q"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_14ssp"/>
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendor Name"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="@id/q"
+                android:textColor="@color/green"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:textSize="@dimen/_16ssp"/>
+            <TextView
+                android:id="@+id/datetv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                app:layout_constraintTop_toBottomOf="@id/q"
+                android:textColor="@color/black4"
+                app:layout_constraintStart_toStartOf="@id/q"
+                android:textSize="@dimen/_16ssp"/>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Dec 2010 "
+                app:layout_constraintTop_toBottomOf="@id/q"
+                android:textColor="@color/black4"
+                app:layout_constraintStart_toEndOf="@id/datetv"
+                android:textSize="@dimen/_16ssp"/>
+            <TextView
+                android:id="@+id/ptv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment: Rs "
+                app:layout_constraintTop_toBottomOf="@id/datetv"
+                android:textColor="@color/black4"
+                app:layout_constraintStart_toStartOf="@id/datetv"
+                android:textSize="@dimen/_16ssp"/>
+            <TextView
+                android:id="@+id/payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3000"
+                app:layout_constraintTop_toBottomOf="@id/datetv"
+                android:textColor="@color/black4"
+                app:layout_constraintStart_toEndOf="@id/ptv"
+                android:textSize="@dimen/_16ssp"/>
+            <TextView
+                android:id="@+id/paidtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid: Rs "
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/ptv"
+                android:textColor="@color/black4"
+                app:layout_constraintStart_toStartOf="@id/q"
+                android:textSize="@dimen/_14ssp"/>
+            <TextView
+                android:id="@+id/vname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendor Name"
+                app:layout_constraintTop_toBottomOf="@id/ptv"
+                android:textColor="@color/black4"
+                app:layout_constraintStart_toEndOf="@id/paidtv"
+                android:textSize="@dimen/_14ssp"/>
+            <TextView
+                android:id="@+id/statusbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:ellipsize="marquee"
+                android:padding="@dimen/_10sdp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

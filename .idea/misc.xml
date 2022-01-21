@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable-v24/bottonnav.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable-v24/cancelled.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable-v24/dispatch.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable-v24/profileitems.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/buttonnn.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/chekcout.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/design.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/messageout.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/mymessage.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/othermessage.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/pending.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/rell.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_account_information.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_call_us.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_chat.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_complaints.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_customer_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_dispatch.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_forgot_password.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_history.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_order_details.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_vendors_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_vendors_products.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/fragment_delivery.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/fragment_my_vendor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/fragment_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/historycard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/messageout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/myorderscard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/myvendorsorders.xml" value="0.20102564102564102" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/orderitems.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/vendorcard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/vendorproductscard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/menu/bottomnav.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/mipmap-anydpi-v26/ic_launcher_appicon.xml" value="0.1125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/mipmap-anydpi-v26/ic_launcher_appicon_round.xml" value="0.1125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
