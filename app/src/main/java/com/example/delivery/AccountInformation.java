@@ -150,7 +150,8 @@ public class AccountInformation extends AppCompatActivity {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         // error
-                        Log.d("Error.Response", Objects.requireNonNull(error.getMessage()));
+                       progressDialog.dismiss();
+                        Toast.makeText(getApplicationContext(), "Internet Error", Toast.LENGTH_SHORT).show();
                     }
                 }
         ) {
@@ -198,28 +199,23 @@ public class AccountInformation extends AppCompatActivity {
                     String error_msg = jObj.getString("msg");
 
 
-                    if (!error) {
+                    if (error) {
 
                         progressDialog.hide();
-
                         Toast.makeText(getApplicationContext(),error_msg,Toast.LENGTH_LONG).show();
 
 
                     }else {
 
                         progressDialog.dismiss();
-
-
-
                         Toast.makeText(getApplicationContext(), "Profile Updated Successfull", Toast.LENGTH_SHORT).show();
-
+                        userInfo.setPass(password);
 
                     }
 
                 } catch (JSONException e) {
                     progressDialog.hide();
                     // JSON error
-                    e.printStackTrace();
 
 
                     Toast.makeText (getApplicationContext(),"Internet Error",Toast.LENGTH_SHORT ).show ();
@@ -232,8 +228,7 @@ public class AccountInformation extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 progressDialog.hide();
-                //Log.e(TAG, "Login Error: " + error.getMessage());
-
+                Toast.makeText (getApplicationContext(),"Internet Error",Toast.LENGTH_SHORT ).show ();
 
 
             }

@@ -29,7 +29,7 @@ public class Login extends AppCompatActivity {
     String phonenumbers, passwords;
     UserSession userSession;
     ProgressDialog progressDialog;
-    String user_id;
+    String user_id,user_pass;
     UserInfo userInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,9 +46,10 @@ public class Login extends AppCompatActivity {
         userSession = new UserSession(this);
         userInfo = new UserInfo(Login.this);
         user_id = userInfo.getKeyId();
+        user_pass = userInfo.getKeyPass();
 
         if (userSession.isUserLoggedin()) {
-            checkstatus(user_id);
+            checkstatus(user_id,user_pass);
         }
 
         forgot.setOnClickListener(new View.OnClickListener() {
@@ -95,18 +96,14 @@ public class Login extends AppCompatActivity {
 
                             if (!error) {
                                 String id = jObj.getString("id");
-
-
-
+                                //String pass = jObj.getString("pass");
 
 
                                 UserInfo info = new UserInfo(getApplicationContext());
 
                                 userSession.setLoggedin(true);
                                 info.setId(id);
-
-
-
+                                info.setPass("0");
 
                                 progressDialog.dismiss();
 
@@ -141,7 +138,7 @@ public class Login extends AppCompatActivity {
                         progressDialog.dismiss();
                         //Log.e(TAG, "Login Error: " + error.getMessage());
 
-                        Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Internet Error", Toast.LENGTH_SHORT).show();
 
 
                     }
@@ -173,7 +170,7 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-    public void checkstatus(String ids){
+    public void checkstatus(String ids, String passes){
 
         progressDialog.show();
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
@@ -192,15 +189,19 @@ public class Login extends AppCompatActivity {
 
                     if (!error) {
                         String id = jObj.getString("status");
-                        Log.d("gggg", "onResponse: "+id);
+                        String pass2 = jObj.getString("pass");
 
                         if (id.equals("Active")) {
-
-
-                            progressDialog.dismiss();
+                            if (passes.equals(pass2)) {
+                                progressDialog.dismiss();
                             Intent intent = new Intent(getApplicationContext(), Home.class);
                             startActivity(intent);
                             finish();
+                            }else {
+                                progressDialog.dismiss();
+                                Toast.makeText(Login.this, "Password Changed. Login Again", Toast.LENGTH_SHORT).show();
+
+                            }
 
                         }else {
                             progressDialog.dismiss();
@@ -219,7 +220,7 @@ public class Login extends AppCompatActivity {
                 } catch (JSONException e) {
                     progressDialog.dismiss();
                     // JSON error
-                    e.printStackTrace();
+
 
                     //Toast.makeText(getApplicationContext(), "Incorrect Phone Or Password Try Again", Toast.LENGTH_SHORT).show();
                 }
@@ -232,7 +233,7 @@ public class Login extends AppCompatActivity {
                 progressDialog.hide();
                 //Log.e(TAG, "Login Error: " + error.getMessage());
 
-                //  Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+                 Toast.makeText(getApplicationContext(), "Internet Error", Toast.LENGTH_SHORT).show();
 
 
             }
