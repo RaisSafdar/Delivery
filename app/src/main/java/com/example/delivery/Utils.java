@@ -1,7 +1,7 @@
 package com.example.delivery;
 
 public class Utils {
-    public static final String BASE_IP = "https://pkwholesales.com/EysaTesting/";
+    public static final String BASE_IP = "https://pkwholesales.com/";
     public static final String Login = BASE_IP + "Delivery/login.php";
     public static final String Checkstatus = BASE_IP + "Delivery/Checkstatus.php";
     public static final String Chat = BASE_IP + "Delivery/deliverychat.php";

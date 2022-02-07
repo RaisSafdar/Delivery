@@ -104,7 +104,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="@dimen/_20sdp"
-            android:text="Details"
+            android:text="Status"
             android:textColor="#27AE60"
             android:textSize="@dimen/_16ssp" />
     </RelativeLayout>

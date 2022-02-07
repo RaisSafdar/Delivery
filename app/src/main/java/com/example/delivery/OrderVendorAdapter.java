@@ -52,7 +52,7 @@ public class OrderVendorAdapter extends RecyclerView.Adapter<OrderVendorAdapter.
         if (holder.s1.equals("Delivered")){
             holder.relativeLayout.setBackgroundResource(R.drawable.rell);
         }else if (holder.s1.equals("Ready")){
-            holder.relativeLayout.setBackgroundResource(R.drawable.pending);
+            holder.relativeLayout.setBackgroundResource(R.drawable.readyimg);
         }else if (holder.s1.equals("Dispatch")){
             holder.relativeLayout.setBackgroundResource(R.drawable.dispatch);
         }else if (holder.s1.equals("Cancelled")){

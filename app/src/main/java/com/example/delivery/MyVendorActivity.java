@@ -137,8 +137,8 @@ public class MyVendorActivity extends AppCompatActivity {
 
                         } catch (JSONException e) {
 
-                            e.printStackTrace();
-                            Log.d("Error.Response", Objects.requireNonNull(e.getMessage()));
+                            progressDialog.dismiss();
+
 
 
                         }
@@ -147,8 +147,8 @@ public class MyVendorActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        // error
-                        Log.d("verror", "onErrorResponse: "+error.getMessage());
+                        progressDialog.dismiss();
+                        Toast.makeText(getApplicationContext(), "Internet Error", Toast.LENGTH_SHORT).show();
                     }
                 }
         ) {
