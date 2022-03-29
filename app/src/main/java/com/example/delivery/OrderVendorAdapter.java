@@ -1,5 +1,6 @@
 package com.example.delivery;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -36,7 +37,7 @@ public class OrderVendorAdapter extends RecyclerView.Adapter<OrderVendorAdapter.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull OrderVendorAdapter.myviewholder holder, int position) {
+    public void onBindViewHolder(@NonNull OrderVendorAdapter.myviewholder holder, @SuppressLint("RecyclerView") int position) {
         OrderVendorModel myOrdersModel = list.get(position);
         holder.textView.setText(myOrdersModel.getName());
         holder.vendor_id = myOrdersModel.getId();
@@ -63,10 +64,11 @@ public class OrderVendorAdapter extends RecyclerView.Adapter<OrderVendorAdapter.
         holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context,OrderDetails.class);
-                intent.putExtra("vendor_id",holder.vendor_id);
-                intent.putExtra("status",holder.s1);
+                Intent intent = new Intent(context,VendorsTab.class);
+//                intent.putExtra("vendor_id",holder.vendor_id);
+//                intent.putExtra("status",holder.s1);
                 intent.putExtra("ordrid",order_id);
+                intent.putExtra("pos",String.valueOf(position));
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
@@ -81,7 +83,7 @@ public class OrderVendorAdapter extends RecyclerView.Adapter<OrderVendorAdapter.
     public class myviewholder extends RecyclerView.ViewHolder {
         TextView textView,statuss;
         RelativeLayout relativeLayout;
-        String vendor_id,s1,cphone,cstore,cfname,ccity,cadress;
+        String vendor_id,s1,cphone,cstore,cfname,ccity,cadress,position;
         public myviewholder(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.vendorname);

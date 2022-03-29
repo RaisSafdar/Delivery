@@ -69,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/pnomber"
-        app:layout_constraintBottom_toTopOf="@id/passwordedt"
+        app:layout_constraintBottom_toTopOf="@id/rl"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginLeft="@dimen/_10sdp"
         android:text="Password"
@@ -81,20 +81,38 @@
         android:id="@+id/passtxt" />
 
 
-    <EditText
-        android:id="@+id/passwordedt"
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_6sdp"
-        android:background="@drawable/edittext"
-        android:hint="password"
-        android:paddingStart="@dimen/_5sdp"
-        android:inputType="textPassword"
-        android:textAlignment="textStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passtxt" />
+        app:layout_constraintTop_toBottomOf="@id/passtxt">
+
+
+        <EditText
+            android:id="@+id/passwordedt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@drawable/edittext"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/_10sdp"
+            android:textAlignment="textStart" />
+
+        <ImageView
+            android:id="@+id/passtog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:src="@drawable/passwordtoggle" />
+
+    </RelativeLayout>
 
 
     <TextView
@@ -102,7 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passwordedt"
+        app:layout_constraintTop_toBottomOf="@id/rl"
         android:textColor="@color/green"
         android:textSize="@dimen/_15ssp"
         android:text="Forgot Password"

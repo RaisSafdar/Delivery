@@ -1,5 +1,6 @@
 package com.example.delivery;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -45,6 +46,7 @@ public class MyVendorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_my_vendor);
 
+
         progressDialog = new ProgressDialog(MyVendorActivity.this);
         progressDialog.setMessage("Loading...Please wait");
         progressDialog.setCanceledOnTouchOutside(false);
@@ -68,6 +70,27 @@ public class MyVendorActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
 
          progressDialog.show();
+
+         loadvendor();
+
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+            Intent intent1 = new Intent(getApplicationContext(),CustomerDetailsActivity.class);
+            intent1.putExtra("cfname",cfname);
+            intent1.putExtra("cphone",cphone);
+            intent1.putExtra("cadress",cadress);
+            intent1.putExtra("cstore",cstore);
+            intent1.putExtra("ccity",ccity);
+            intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent1);
+
+            }
+        });
+    }
+
+    private void loadvendor() {
         StringRequest postRequest = new StringRequest(Request.Method.POST, Utils.ordervendor,
                 new Response.Listener<String>() {
                     @Override
@@ -130,7 +153,7 @@ public class MyVendorActivity extends AppCompatActivity {
                                 }
 
                             }
-                            Collections.reverse(list);
+
                             adapter = new OrderVendorAdapter(list, getApplicationContext(),order_id,status,vendor_id);
 
                             recyclerView.setAdapter(adapter);
@@ -167,20 +190,15 @@ public class MyVendorActivity extends AppCompatActivity {
 
         };
         Singleton.getInstance(getApplicationContext()).addToRequestQueue(postRequest);
+    }
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            Intent intent1 = new Intent(getApplicationContext(),CustomerDetailsActivity.class);
-            intent1.putExtra("cfname",cfname);
-            intent1.putExtra("cphone",cphone);
-            intent1.putExtra("cadress",cadress);
-            intent1.putExtra("cstore",cstore);
-            intent1.putExtra("ccity",ccity);
-            intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent1);
 
-            }
-        });
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        progressDialog.show();
+        list.clear();
+        loadvendor();
     }
 }

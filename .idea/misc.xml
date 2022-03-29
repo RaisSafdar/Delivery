@@ -7,6 +7,7 @@
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable-v24/cancelled.xml" value="0.2203125" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable-v24/dispatch.xml" value="0.2203125" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable-v24/profileitems.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable-v24/rell.xml" value="0.2203125" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/buttonnn.xml" value="0.2203125" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/chekcout.xml" value="0.2203125" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/design.xml" value="0.2203125" />
@@ -14,6 +15,7 @@
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/mymessage.xml" value="0.2203125" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/othermessage.xml" value="0.2203125" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/pending.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/readyimg.xml" value="0.2203125" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/drawable/rell.xml" value="0.2203125" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_account_information.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_call_us.xml" value="0.19010416666666666" />
@@ -30,10 +32,12 @@
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_vendors_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_vendors_products.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/activity_vendors_tab.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/fragment_delivery.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/fragment_my_vendor.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/fragment_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/fragment_vendor_names.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/historycard.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/messageout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Ali Mirza/AndroidStudioProjects/Delivery/app/src/main/res/layout/myorderscard.xml" value="0.20416666666666666" />

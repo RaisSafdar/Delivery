@@ -39,7 +39,8 @@ TextView recievedbtn,
     EditText builtynum,adda_drivername,drivernum,driveraddress;
     JSONObject server_responce;
     ProgressDialog progressDialog;
-    String orderid,builty,namestr,numstr,addressstr,images;
+    String orderid,builty,namestr,numstr,addressstr,images,pos;
+    int position;
     Bitmap bitmaps;
     private static int RESULT_LOAD_IMG;
     private static final int REQUEST_ONE = 1;
@@ -67,7 +68,11 @@ TextView recievedbtn,
         progressDialog.setCanceledOnTouchOutside(false);
         Intent intent = getIntent();
         orderid = intent.getStringExtra("order_id");
+        position = intent.getIntExtra("pos",0);
+        pos = String.valueOf(position);
         getcustomerdetails();
+
+
 
 
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -117,8 +122,10 @@ TextView recievedbtn,
                             }else {
 
                                     progressDialog.dismiss();
-                                    Toast.makeText(getApplicationContext(), "Submitted Successfully", Toast.LENGTH_SHORT).show();
-                                    Intent intent =new Intent(getApplicationContext(),Home.class);
+                                    Toast.makeText(getApplicationContext(), ""+position, Toast.LENGTH_SHORT).show();
+                                    Intent intent =new Intent(getApplicationContext(),VendorsTab.class);
+                                    intent.putExtra("ordrid",orderid);
+                                    intent.putExtra("pos",pos);
                                     startActivity(intent);
                                     finish();
 

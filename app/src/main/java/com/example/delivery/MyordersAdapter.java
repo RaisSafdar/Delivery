@@ -1,5 +1,7 @@
 package com.example.delivery;
 
+import static com.example.delivery.R.drawable.pending;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +14,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
@@ -45,16 +48,19 @@ public class MyordersAdapter extends RecyclerView.Adapter<MyordersAdapter.myview
 
         if (holder.s1.equals("Delivered")){
             holder.t3.setText("Completed");
+            holder.t3.setBackgroundResource(R.drawable.rell);
         }else if (holder.s1.equals("Cancelled")){
             holder.t3.setText("Completed");
+            holder.t3.setBackgroundResource(R.drawable.rell);
         }else if (holder.s1.equals("Pending")){
             holder.t3.setText("Pending");
+            holder.t3.setBackground(context.getDrawable(pending));
         }else if (holder.s1.equals("Ready")){
             holder.t3.setText("Pending");
+            holder.t3.setBackgroundResource(pending);
         }else if (holder.s1.equals("Dispatch")){
             holder.t3.setText("Pending");
-        }else {
-            holder.t3.setText("Pending");
+            holder.t3.setBackgroundResource(pending);
         }
         holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override

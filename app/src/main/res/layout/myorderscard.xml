@@ -50,7 +50,7 @@ android:paddingHorizontal="@dimen/_5sdp"
                 android:layout_centerVertical="true"
                 android:layout_marginTop="@dimen/_3sdp"
                 android:layout_marginEnd="@dimen/_5sdp"
-                android:background="@drawable/rell">
+                >
 
                 <TextView
                     android:id="@+id/status"
@@ -60,7 +60,8 @@ android:paddingHorizontal="@dimen/_5sdp"
                     android:layout_marginHorizontal="@dimen/_10sdp"
                     android:ellipsize="marquee"
                     android:gravity="center"
-
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/rell"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12ssp" />
 
